@@ -11,8 +11,8 @@ int main() {
     for (int i = 0; i < n.size(); i++){
         sum += n[i];
     }
-
-    cout << sum - (49*n.size()) + n.size();
+    
+    cout << sum - (48*n.size());
 
     return 0;
 }
