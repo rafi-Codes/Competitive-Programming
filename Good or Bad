@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void god(string& str) {
+    for (int i = 0; i < str.size(); i++){
+
+        string temp = str.substr(i,3);
+
+        if (temp == "101" || temp == "010"){
+            cout << "Good" << endl;
+            break;
+        }
+        else if (i == str.size()-1){
+            cout << "Bad" << endl;
+        }
+    }
+}
+
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+
+          string s;
+          cin >> s;
+
+          if(s.size() > 100000){
+             return 0;
+          }
+          god(s);
+    }
+
+    return 0;
+}
+
