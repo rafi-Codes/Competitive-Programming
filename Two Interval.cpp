@@ -11,7 +11,7 @@ int main (){
     else if (L1 > R2 || L2 > R1) { 
         cout << -1;
     }
-    else { // Overlapping range
+    else { 
         cout << max(L1, L2) << " " << min(R1, R2) << endl;
     }
 
